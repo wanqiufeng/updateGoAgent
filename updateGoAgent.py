@@ -5,14 +5,17 @@ import re
 import bs4
 
 
-global remoteVersionNo
-global downloadAddr
+remoteVersionNo = None
+downloadAddr = None
 
 
 def downloadNewVersion():
-    print("new version download")
-nticat
-
+    print(downloadAddr)
+    r = requests.get(downloadAddr, stream=True,verify=False)
+    print(r.headers.get('content-disposition'))
+    #with open("fff", 'wb') as fd:
+        #for chunk in r.iter_content(1024):
+            #fd.write(chunk)
 def replaceOldVersion():
     pass
 
@@ -26,9 +29,9 @@ def deploy():
 
 
 def hasNewVersion():
-    if getLocalVersion():
-        return True
-    return False
+    if getLocalVersion() == remoteVersionNo:
+        return False
+    return True
 
 
 def getLocalVersion():
@@ -39,6 +42,8 @@ def getLocalVersion():
 
 
 def getRemoteVersionInfo():
+    global remoteVersionNo
+    global downloadAddr
     r = requests.get('https://code.google.com/p/goagent/')
     soup = bs4.BeautifulSoup(r.text)
 
@@ -46,16 +51,15 @@ def getRemoteVersionInfo():
     remoteVersionNoStr = str(soup.p.find(text=True))
     matchVersion = re.search('goagent (.+?) 正式版下载',remoteVersionNoStr)
     remoteVersionNo = matchVersion.group(1)
-    print(remoteVersionNo)
 
     #get remote version download address
     downloadAddr = str(soup.p.a['href'])
-    print(downloadAddr)
 
 def main():
     getRemoteVersionInfo()
-    if hasNewVersion():
-        downloadNewVersion()
+    downloadNewVersion()
+    #if hasNewVersion():
+        #downloadNewVersion()
 
 
 if __name__ == '__main__':
