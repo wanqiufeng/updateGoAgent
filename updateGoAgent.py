@@ -11,7 +11,7 @@ global downloadAddr
 
 def downloadNewVersion():
     print("new version download")
-
+nticat
 
 def replaceOldVersion():
     pass
