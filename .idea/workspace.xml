@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ad3488e-e17e-47e8-bc85-5435f50d4d65" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testBeautifulSoup.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testBeautifulSoup.py" afterPath="$PROJECT_DIR$/testBeautifulSoup.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/updateGoAgent.py" afterPath="$PROJECT_DIR$/updateGoAgent.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="updateGoAgent.iws" />
@@ -36,10 +36,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="updateGoAgent.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="updateGoAgent.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/updateGoAgent.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="0" selection-start="555" selection-end="555" vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="855">
+            <state line="6" column="0" selection-start="72" selection-end="72" vertical-scroll-proportion="0.296875" vertical-offset="0" max-vertical-offset="1292">
               <folding>
                 <element signature="e#23#33#0" expanded="true" />
               </folding>
@@ -47,10 +47,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="testBeautifulSoup.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="testBeautifulSoup.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testBeautifulSoup.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="24" selection-end="24" vertical-scroll-proportion="0.049479168" vertical-offset="0" max-vertical-offset="384">
+            <state line="14" column="24" selection-start="541" selection-end="541" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="456">
               <folding />
             </state>
           </provider>
@@ -77,8 +77,8 @@
         <option value="$PROJECT_DIR$/testFile.py" />
         <option value="$APPLICATION_HOME_DIR$/helpers/python-skeletons/re.py" />
         <option value="$PROJECT_DIR$/local/proxy.py" />
-        <option value="$PROJECT_DIR$/updateGoAgent.py" />
         <option value="$PROJECT_DIR$/testBeautifulSoup.py" />
+        <option value="$PROJECT_DIR$/updateGoAgent.py" />
       </list>
     </option>
   </component>
@@ -185,6 +185,24 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="updateGoAgent" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testFile.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="testBeautifulSoup" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="updateGoAgent" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testBeautifulSoup.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
@@ -325,17 +343,21 @@
       <module name="updateGoAgent" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/updateGoAgent.py" />
       <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Python.updateGoAgent" />
       <item index="1" class="java.lang.String" itemvalue="Python.testFile" />
+      <item index="2" class="java.lang.String" itemvalue="Python.testBeautifulSoup" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Python.testFile" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Python.testBeautifulSoup" />
+        <item index="1" class="java.lang.String" itemvalue="Python.testFile" />
       </list>
     </recent_temporary>
   </component>
@@ -363,22 +385,28 @@
       <created>1382941933728</created>
       <updated>1382941933728</updated>
     </task>
+    <task id="LOCAL-00001" summary="test beautifulSoup">
+      <created>1383619368147</created>
+      <updated>1383619368147</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="32" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.67156863" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39869282" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32843137" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32843137" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -395,20 +423,13 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="test beautifulSoup" />
+    <option name="LAST_COMMIT_MESSAGE" value="test beautifulSoup" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/updateGoAgent.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="22" selection-start="331" selection-end="331" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="779">
-          <folding>
-            <element signature="e#23#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testFile.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="0" selection-start="34" selection-end="204" vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="285">
@@ -482,7 +503,9 @@
     </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons/re.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="220" column="0" selection-start="6011" selection-end="6011" vertical-scroll-proportion="0.33333334" vertical-offset="4052" max-vertical-offset="5358" />
+        <state line="220" column="0" selection-start="6011" selection-end="6011" vertical-scroll-proportion="0.33333334" vertical-offset="4052" max-vertical-offset="5358">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/local/proxy.py">
@@ -504,19 +527,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/updateGoAgent.py">
+    <entry file="file://$PROJECT_DIR$/testBeautifulSoup.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="555" selection-end="555" vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="855">
-          <folding>
-            <element signature="e#23#33#0" expanded="true" />
-          </folding>
+        <state line="14" column="24" selection-start="541" selection-end="541" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="456">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testBeautifulSoup.py">
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_execfile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="24" selection-end="24" vertical-scroll-proportion="0.049479168" vertical-offset="0" max-vertical-offset="384">
+        <state line="29" column="9" selection-start="1048" selection-end="1048" vertical-scroll-proportion="0.27565983" vertical-offset="457" max-vertical-offset="798">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/updateGoAgent.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="72" selection-end="72" vertical-scroll-proportion="0.296875" vertical-offset="0" max-vertical-offset="1292">
+          <folding>
+            <element signature="e#23#33#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
