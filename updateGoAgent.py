@@ -3,6 +3,7 @@ import sys
 import requests
 import re
 import bs4
+import tempfile
 
 
 remoteVersionNo = None
@@ -10,12 +11,14 @@ downloadAddr = None
 
 
 def downloadNewVersion():
-    print(downloadAddr)
     r = requests.get(downloadAddr, stream=True,verify=False)
-    print(r.headers.get('content-disposition'))
-    #with open("fff", 'wb') as fd:
-        #for chunk in r.iter_content(1024):
-            #fd.write(chunk)
+    fileName = getFileName(r.headers.get('content-disposition'))
+    with open(fileName, 'wb') as fd:
+        for chunk in r.iter_content(1024):
+            fd.write(chunk)
+def getFileName(str):
+    return str[str.index("=")+1:]
+
 def replaceOldVersion():
     pass
 
