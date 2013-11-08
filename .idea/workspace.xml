@@ -1,41 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8ad3488e-e17e-47e8-bc85-5435f50d4d65" name="Default" comment="add code to obtain remote version's version no and download address.">
-      <change type="DELETED" beforePath="D:\PythonWorkspace\updateGoAgent\local\Microsoft.VC90.CRT.manifest" afterPath="" />
-      <change type="DELETED" beforePath="D:\PythonWorkspace\updateGoAgent\local\SwitchyOptions.bak" afterPath="" />
-      <change type="DELETED" beforePath="D:\PythonWorkspace\updateGoAgent\local\SwitchySharp.crx" afterPath="" />
-      <change type="DELETED" beforePath="D:\PythonWorkspace\updateGoAgent\local\addto-startup.js" afterPath="" />
-      <change type="DELETED" beforePath="D:\PythonWorkspace\updateGoAgent\local\addto-startup.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\PythonWorkspace\updateGoAgent\local\cacert.pem" afterPath="" />
-      <change type="DELETED" beforePath="D:\PythonWorkspace\updateGoAgent\local\certs\.gitkeep" afterPath="" />
-      <change type="DELETED" beforePath="D:\PythonWorkspace\updateGoAgent\local\goagent-gtk.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\PythonWorkspace\updateGoAgent\local\goagent-osx.command" afterPath="" />
-      <change type="DELETED" beforePath="D:\PythonWorkspace\updateGoAgent\local\goagent.exe" afterPath="" />
-      <change type="DELETED" beforePath="D:\PythonWorkspace\updateGoAgent\local\msvcr90.dll" afterPath="" />
-      <change type="DELETED" beforePath="D:\PythonWorkspace\updateGoAgent\local\proxy.bat" afterPath="" />
-      <change type="DELETED" beforePath="D:\PythonWorkspace\updateGoAgent\local\proxy.ini" afterPath="" />
-      <change type="DELETED" beforePath="D:\PythonWorkspace\updateGoAgent\local\proxy.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\PythonWorkspace\updateGoAgent\local\python27.dll" afterPath="" />
-      <change type="DELETED" beforePath="D:\PythonWorkspace\updateGoAgent\local\python27.exe" afterPath="" />
-      <change type="DELETED" beforePath="D:\PythonWorkspace\updateGoAgent\local\python27.zip" afterPath="" />
-      <change type="DELETED" beforePath="D:\PythonWorkspace\updateGoAgent\local\uvent.bat" afterPath="" />
-      <change type="DELETED" beforePath="D:\PythonWorkspace\updateGoAgent\server\php\index.php" afterPath="" />
-      <change type="DELETED" beforePath="D:\PythonWorkspace\updateGoAgent\server\python\Procfile" afterPath="" />
-      <change type="DELETED" beforePath="D:\PythonWorkspace\updateGoAgent\server\python\README.txt" afterPath="" />
-      <change type="DELETED" beforePath="D:\PythonWorkspace\updateGoAgent\server\python\app.yaml" afterPath="" />
-      <change type="DELETED" beforePath="D:\PythonWorkspace\updateGoAgent\server\python\application" afterPath="" />
-      <change type="DELETED" beforePath="D:\PythonWorkspace\updateGoAgent\server\python\requirements.txt" afterPath="" />
-      <change type="DELETED" beforePath="D:\PythonWorkspace\updateGoAgent\server\python\robots.txt" afterPath="" />
-      <change type="DELETED" beforePath="D:\PythonWorkspace\updateGoAgent\server\python\supervisor.conf" afterPath="" />
-      <change type="DELETED" beforePath="D:\PythonWorkspace\updateGoAgent\server\python\wsgi.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\PythonWorkspace\updateGoAgent\server\uploader.bat" afterPath="" />
-      <change type="DELETED" beforePath="D:\PythonWorkspace\updateGoAgent\server\uploader.zip" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/updateGoAgent.iml" afterPath="$PROJECT_DIR$/.idea/updateGoAgent.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/updateGoAgent.py" afterPath="$PROJECT_DIR$/updateGoAgent.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="8ad3488e-e17e-47e8-bc85-5435f50d4d65" name="Default" comment="add code to obtain remote version's version no and download address." />
     <ignored path="updateGoAgent.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -482,14 +448,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="32" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.67320263" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.67320263" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39869282" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.659164" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
