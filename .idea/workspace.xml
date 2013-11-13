@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ad3488e-e17e-47e8-bc85-5435f50d4d65" name="Default" comment="add code to obtain remote version's version no and download address.">
-      <change type="DELETED" beforePath="D:\PythonWorkspace\updateGoAgent\goagent-goagent-v3.0.6-10-g52684c0.zip" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/setup.py" afterPath="$PROJECT_DIR$/setup.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/updateGoAgent.py" afterPath="$PROJECT_DIR$/updateGoAgent.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -27,10 +27,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="updateGoAgent.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="updateGoAgent.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/updateGoAgent.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="25" selection-start="981" selection-end="981" vertical-scroll-proportion="0.0" vertical-offset="399" max-vertical-offset="2698">
+            <state line="40" column="45" selection-start="1238" selection-end="1238" vertical-scroll-proportion="0.1974026" vertical-offset="684" max-vertical-offset="2546">
               <folding>
                 <element signature="e#23#33#0" expanded="true" />
               </folding>
@@ -38,21 +38,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="setup.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/setup.py">
+      <file leaf-file-name="GAUpaterGUI.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GAUpaterGUI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="27" selection-start="99" selection-end="99" vertical-scroll-proportion="0.1974026" vertical-offset="0" max-vertical-offset="385">
-              <folding>
-                <element signature="e#24#56#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="proxy.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/local/proxy.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="20" selection-start="1498" selection-end="1498" vertical-scroll-proportion="0.0" vertical-offset="399" max-vertical-offset="50882">
+            <state line="4" column="12" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="190">
               <folding />
             </state>
           </provider>
@@ -61,7 +50,7 @@
       <file leaf-file-name="testOs.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testOs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="23" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="190">
+            <state line="4" column="23" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="190">
               <folding />
             </state>
           </provider>
@@ -120,9 +109,10 @@
         <option value="$PROJECT_DIR$/testZipfile1.py" />
         <option value="$PROJECT_DIR$/testOs.py" />
         <option value="$PROJECT_DIR$/local/proxy.ini" />
-        <option value="$PROJECT_DIR$/updateGoAgent.py" />
-        <option value="$PROJECT_DIR$/local/proxy.py" />
         <option value="$PROJECT_DIR$/setup.py" />
+        <option value="$PROJECT_DIR$/local/proxy.py" />
+        <option value="$PROJECT_DIR$/updateGoAgent.py" />
+        <option value="$PROJECT_DIR$/GAUpaterGUI.py" />
       </list>
     </option>
   </component>
@@ -158,7 +148,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -179,6 +168,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -197,15 +187,15 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="86" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="397" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="398" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="397" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="87" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="81" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -217,25 +207,7 @@
       <recent name="D:\PythonWorkspace\updateGoAgent" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.updateGoAgent">
-    <configuration default="false" name="testTempfile" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="updateGoAgent" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testTempfile.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.GAUpaterGUI">
     <configuration default="false" name="testZipFile" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -305,6 +277,24 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="updateGoAgent" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/local/proxy.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="GAUpaterGUI" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="updateGoAgent" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GAUpaterGUI.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
@@ -453,19 +443,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.updateGoAgent" />
-      <item index="1" class="java.lang.String" itemvalue="Python.testTempfile" />
-      <item index="2" class="java.lang.String" itemvalue="Python.testZipFile" />
-      <item index="3" class="java.lang.String" itemvalue="Python.testZipfile1" />
-      <item index="4" class="java.lang.String" itemvalue="Python.testOs" />
-      <item index="5" class="java.lang.String" itemvalue="Python.proxy" />
+      <item index="1" class="java.lang.String" itemvalue="Python.testZipFile" />
+      <item index="2" class="java.lang.String" itemvalue="Python.testZipfile1" />
+      <item index="3" class="java.lang.String" itemvalue="Python.testOs" />
+      <item index="4" class="java.lang.String" itemvalue="Python.proxy" />
+      <item index="5" class="java.lang.String" itemvalue="Python.GAUpaterGUI" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.proxy" />
-        <item index="1" class="java.lang.String" itemvalue="Python.testOs" />
-        <item index="2" class="java.lang.String" itemvalue="Python.testZipfile1" />
-        <item index="3" class="java.lang.String" itemvalue="Python.testZipFile" />
-        <item index="4" class="java.lang.String" itemvalue="Python.testTempfile" />
+        <item index="0" class="java.lang.String" itemvalue="Python.GAUpaterGUI" />
+        <item index="1" class="java.lang.String" itemvalue="Python.proxy" />
+        <item index="2" class="java.lang.String" itemvalue="Python.testOs" />
+        <item index="3" class="java.lang.String" itemvalue="Python.testZipfile1" />
+        <item index="4" class="java.lang.String" itemvalue="Python.testZipFile" />
       </list>
     </recent_temporary>
   </component>
@@ -515,7 +505,6 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.67320263" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39869282" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -526,6 +515,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -552,16 +542,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="384" />
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_execfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="9" selection-start="1048" selection-end="1048" vertical-scroll-proportion="0.27565983" vertical-offset="457" max-vertical-offset="798" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testBeautifulSoup.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="24" selection-start="541" selection-end="541" vertical-scroll-proportion="0.5140665" vertical-offset="65" max-vertical-offset="456" />
@@ -602,14 +582,38 @@
     </entry>
     <entry file="file://$USER_HOME$/.PyCharm30/system/python_stubs/633835329/nt.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="263" column="4" selection-start="6176" selection-end="6176" vertical-scroll-proportion="0.0" vertical-offset="4873" max-vertical-offset="13186">
-          <folding />
-        </state>
+        <state line="263" column="4" selection-start="6176" selection-end="6176" vertical-scroll-proportion="0.0" vertical-offset="4873" max-vertical-offset="13186" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testZipFile.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="52" selection-start="447" selection-end="495" vertical-scroll-proportion="0.0" vertical-offset="71" max-vertical-offset="570">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local/proxy.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="24" selection-start="148" selection-end="148" vertical-scroll-proportion="0.56182796" vertical-offset="0" max-vertical-offset="2128" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local/proxy.pac">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="87723" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="235" selection-end="235" vertical-scroll-proportion="0.16239317" vertical-offset="0" max-vertical-offset="585">
+          <folding>
+            <element signature="e#0#10#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local/proxy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="45" selection-start="590" selection-end="590" vertical-scroll-proportion="0.6639785" vertical-offset="0" max-vertical-offset="50882">
           <folding />
         </state>
       </provider>
@@ -621,41 +625,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/local/proxy.ini">
+    <entry file="file://D:/Program Files (x86)/python/Lib/tkinter/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="24" selection-start="148" selection-end="148" vertical-scroll-proportion="0.56182796" vertical-offset="0" max-vertical-offset="2128">
+        <state line="51" column="0" selection-start="1564" selection-end="1564" vertical-scroll-proportion="-176.3974" vertical-offset="68882" max-vertical-offset="70661">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/local/proxy.pac">
+    <entry file="file://$PROJECT_DIR$/GAUpaterGUI.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="87723">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local/proxy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="20" selection-start="1498" selection-end="1498" vertical-scroll-proportion="0.0" vertical-offset="399" max-vertical-offset="50882">
+        <state line="4" column="12" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="190">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/updateGoAgent.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="25" selection-start="981" selection-end="981" vertical-scroll-proportion="0.0" vertical-offset="399" max-vertical-offset="2698">
+        <state line="40" column="45" selection-start="1238" selection-end="1238" vertical-scroll-proportion="0.1974026" vertical-offset="684" max-vertical-offset="2546">
           <folding>
             <element signature="e#23#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/setup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="27" selection-start="99" selection-end="99" vertical-scroll-proportion="0.1974026" vertical-offset="0" max-vertical-offset="385">
-          <folding>
-            <element signature="e#24#56#0" expanded="true" />
           </folding>
         </state>
       </provider>

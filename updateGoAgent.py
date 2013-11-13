@@ -13,26 +13,23 @@ import math
 
 def downloadNewVersion(downloadAddr):
     r = requests.get(downloadAddr, stream=True, verify=False)
-    fileName = getFileName(r.headers.get('content-disposition'))
     totalFileLength = int((r.headers.get("Content-Length").strip()))
     downLoadSize = 0
     previousPercent = 0
-    with open(fileName, 'wb') as fd:
-        for chunk in r.iter_content(1024):
-            downLoadSize += len(chunk)
-            fd.write(chunk)
-            printProccess(math.floor((downLoadSize / totalFileLength) * 100),previousPercent)
-            previousPercent = math.floor((downLoadSize / totalFileLength) * 100)
-    return fileName
+    tempFile = tempfile.TemporaryFile()
+    for chunk in r.iter_content(1024):
+        downLoadSize += len(chunk)
+        tempFile.write(chunk)
+        printProccess(math.floor((downLoadSize / totalFileLength) * 100),previousPercent)
+        previousPercent = math.floor((downLoadSize / totalFileLength) * 100)
+    return tempFile
     #TO_DO: 1. change fixed download file to temp file
     #TO_DO: 2.add download percent show
-
 
 def printProccess(currentNum,PreviouseNum):
     if currentNum > PreviouseNum:
         print("#",end='')
-def getFileName(str):
-    return str[str.index("=") + 1:]
+
 
 
 def setAppID(appId):
@@ -112,19 +109,14 @@ def createFolder(folderName, override=False):
         shutil.rmtree(folderName)
     os.makedirs(folderName, exist_ok=True)
 
-
-def deleteFile(fileName):
-    os.remove(fileName)
-
-
 def main():
     remoteInfo = getRemoteVersionInfo()
     localAppId = getAppId()
     if hasNewVersion(getLocalVersion(), remoteInfo["remoteVersionNo"]):
-        fileName = downloadNewVersion(remoteInfo["downloadAddr"])
-        replaceOldVersion(fileName)
+        downloadedFile = downloadNewVersion(remoteInfo["downloadAddr"])
+        replaceOldVersion(downloadedFile)
         setAppID(localAppId)
-        deleteFile(fileName)
+        downloadedFile.close()
         deploy()
 
 
