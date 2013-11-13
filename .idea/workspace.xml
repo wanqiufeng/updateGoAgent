@@ -2,9 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ad3488e-e17e-47e8-bc85-5435f50d4d65" name="Default" comment="add code to obtain remote version's version no and download address.">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/setup.py" afterPath="$PROJECT_DIR$/setup.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local/Microsoft.VC90.CRT.manifest" afterPath="$PROJECT_DIR$/local/Microsoft.VC90.CRT.manifest" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/python/Procfile" afterPath="$PROJECT_DIR$/server/python/Procfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local/addto-startup.py" afterPath="$PROJECT_DIR$/local/addto-startup.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local/cacert.pem" afterPath="$PROJECT_DIR$/local/cacert.pem" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local/goagent-gtk.py" afterPath="$PROJECT_DIR$/local/goagent-gtk.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local/goagent-osx.command" afterPath="$PROJECT_DIR$/local/goagent-osx.command" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/php/index.php" afterPath="$PROJECT_DIR$/server/php/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local/proxy.bat" afterPath="$PROJECT_DIR$/local/proxy.bat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local/proxy.py" afterPath="$PROJECT_DIR$/local/proxy.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local/proxy.sh" afterPath="$PROJECT_DIR$/local/proxy.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/python/requirements.txt" afterPath="$PROJECT_DIR$/server/python/requirements.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/python/supervisor.conf" afterPath="$PROJECT_DIR$/server/python/supervisor.conf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/updateGoAgent.iml" afterPath="$PROJECT_DIR$/.idea/updateGoAgent.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/updateGoAgent.py" afterPath="$PROJECT_DIR$/updateGoAgent.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/uploader.bat" afterPath="$PROJECT_DIR$/server/uploader.bat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local/uvent.bat" afterPath="$PROJECT_DIR$/local/uvent.bat" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/python/wsgi.py" afterPath="$PROJECT_DIR$/server/python/wsgi.py" />
     </list>
     <ignored path="updateGoAgent.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,10 +43,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="updateGoAgent.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="updateGoAgent.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/updateGoAgent.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="45" selection-start="1238" selection-end="1238" vertical-scroll-proportion="0.1974026" vertical-offset="684" max-vertical-offset="2546">
+            <state line="126" column="10" selection-start="3972" selection-end="3972" vertical-scroll-proportion="0.0" vertical-offset="2154" max-vertical-offset="2546">
               <folding>
                 <element signature="e#23#33#0" expanded="true" />
               </folding>
@@ -38,11 +54,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GAUpaterGUI.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GAUpaterGUI.py">
+      <file leaf-file-name="proxy.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/local/proxy.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="12" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="190">
+            <state line="53" column="12" selection-start="1857" selection-end="1857" vertical-scroll-proportion="0.0" vertical-offset="798" max-vertical-offset="50882">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testTkinter.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/testTkinter.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="0" selection-start="1120" selection-end="1120" vertical-scroll-proportion="0.6122449" vertical-offset="444" max-vertical-offset="836">
+              <folding>
+                <element signature="e#23#44#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -50,7 +77,7 @@
       <file leaf-file-name="testOs.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testOs.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="23" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="190">
+            <state line="4" column="23" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="190">
               <folding />
             </state>
           </provider>
@@ -110,17 +137,18 @@
         <option value="$PROJECT_DIR$/testOs.py" />
         <option value="$PROJECT_DIR$/local/proxy.ini" />
         <option value="$PROJECT_DIR$/setup.py" />
+        <option value="$PROJECT_DIR$/GAUpaterGUI.py" />
         <option value="$PROJECT_DIR$/local/proxy.py" />
         <option value="$PROJECT_DIR$/updateGoAgent.py" />
-        <option value="$PROJECT_DIR$/GAUpaterGUI.py" />
+        <option value="$PROJECT_DIR$/testTkinter.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
-    <option name="y" value="32" />
+    <option name="y" value="22" />
     <option name="width" value="1382" />
-    <option name="height" value="744" />
+    <option name="height" value="754" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -148,6 +176,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -168,7 +197,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -207,27 +235,7 @@
       <recent name="D:\PythonWorkspace\updateGoAgent" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.GAUpaterGUI">
-    <configuration default="false" name="testZipFile" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="updateGoAgent" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testZipFile.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.testTkinter">
     <configuration default="false" name="testZipfile1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -295,6 +303,24 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="updateGoAgent" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/GAUpaterGUI.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="testTkinter" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="updateGoAgent" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testTkinter.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
@@ -443,19 +469,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.updateGoAgent" />
-      <item index="1" class="java.lang.String" itemvalue="Python.testZipFile" />
-      <item index="2" class="java.lang.String" itemvalue="Python.testZipfile1" />
-      <item index="3" class="java.lang.String" itemvalue="Python.testOs" />
-      <item index="4" class="java.lang.String" itemvalue="Python.proxy" />
-      <item index="5" class="java.lang.String" itemvalue="Python.GAUpaterGUI" />
+      <item index="1" class="java.lang.String" itemvalue="Python.testZipfile1" />
+      <item index="2" class="java.lang.String" itemvalue="Python.testOs" />
+      <item index="3" class="java.lang.String" itemvalue="Python.proxy" />
+      <item index="4" class="java.lang.String" itemvalue="Python.GAUpaterGUI" />
+      <item index="5" class="java.lang.String" itemvalue="Python.testTkinter" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.GAUpaterGUI" />
-        <item index="1" class="java.lang.String" itemvalue="Python.proxy" />
-        <item index="2" class="java.lang.String" itemvalue="Python.testOs" />
-        <item index="3" class="java.lang.String" itemvalue="Python.testZipfile1" />
-        <item index="4" class="java.lang.String" itemvalue="Python.testZipFile" />
+        <item index="0" class="java.lang.String" itemvalue="Python.testTkinter" />
+        <item index="1" class="java.lang.String" itemvalue="Python.GAUpaterGUI" />
+        <item index="2" class="java.lang.String" itemvalue="Python.proxy" />
+        <item index="3" class="java.lang.String" itemvalue="Python.testOs" />
+        <item index="4" class="java.lang.String" itemvalue="Python.testZipfile1" />
       </list>
     </recent_temporary>
   </component>
@@ -499,18 +525,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="32" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="22" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.67320263" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.67363346" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39869282" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.659164" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3267974" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32636657" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.659164" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -542,6 +568,34 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/testOs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="23" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="190">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testZipFile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="52" selection-start="447" selection-end="495" vertical-scroll-proportion="0.0" vertical-offset="71" max-vertical-offset="570">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testZipfile1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="21" selection-start="84" selection-end="84" vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="285">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testTempfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0" vertical-offset="133" max-vertical-offset="247">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/testBeautifulSoup.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="24" selection-start="541" selection-end="541" vertical-scroll-proportion="0.5140665" vertical-offset="65" max-vertical-offset="456" />
@@ -550,20 +604,6 @@
     <entry file="file://$PROJECT_DIR$/testFile.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="0" selection-start="34" selection-end="204" vertical-scroll-proportion="0.0971867" vertical-offset="0" max-vertical-offset="391" />
-      </provider>
-    </entry>
-    <entry file="file://D:/Program Files (x86)/python/Lib/zipfile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="851" column="12" selection-start="30115" selection-end="30115" vertical-scroll-proportion="0.72727275" vertical-offset="15718" max-vertical-offset="28975">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Program Files (x86)/python/Lib/shutil.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="0" selection-start="1733" selection-end="1733" vertical-scroll-proportion="0.33246753" vertical-offset="1012" max-vertical-offset="14326">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testTempfile.py">
@@ -580,11 +620,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.PyCharm30/system/python_stubs/633835329/nt.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="263" column="4" selection-start="6176" selection-end="6176" vertical-scroll-proportion="0.0" vertical-offset="4873" max-vertical-offset="13186" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testZipFile.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="52" selection-start="447" selection-end="495" vertical-scroll-proportion="0.0" vertical-offset="71" max-vertical-offset="570">
@@ -597,24 +632,12 @@
         <state line="11" column="24" selection-start="148" selection-end="148" vertical-scroll-proportion="0.56182796" vertical-offset="0" max-vertical-offset="2128" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/local/proxy.pac">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="87723" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/setup.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="0" selection-start="235" selection-end="235" vertical-scroll-proportion="0.16239317" vertical-offset="0" max-vertical-offset="585">
           <folding>
             <element signature="e#0#10#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/local/proxy.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="45" selection-start="590" selection-end="590" vertical-scroll-proportion="0.6639785" vertical-offset="0" max-vertical-offset="50882">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -625,25 +648,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/Program Files (x86)/python/Lib/tkinter/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="0" selection-start="1564" selection-end="1564" vertical-scroll-proportion="-176.3974" vertical-offset="68882" max-vertical-offset="70661">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GAUpaterGUI.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="12" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="190">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/updateGoAgent.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="45" selection-start="1238" selection-end="1238" vertical-scroll-proportion="0.1974026" vertical-offset="684" max-vertical-offset="2546">
+        <state line="126" column="10" selection-start="3972" selection-end="3972" vertical-scroll-proportion="0.0" vertical-offset="2154" max-vertical-offset="2546">
           <folding>
             <element signature="e#23#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/local/proxy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="12" selection-start="1857" selection-end="1857" vertical-scroll-proportion="0.0" vertical-offset="798" max-vertical-offset="50882">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Python33/Lib/tkinter/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="276" column="8" selection-start="9387" selection-end="9387" vertical-scroll-proportion="3.391892" vertical-offset="3989" max-vertical-offset="74043">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testTkinter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="0" selection-start="1120" selection-end="1120" vertical-scroll-proportion="0.6122449" vertical-offset="444" max-vertical-offset="836">
+          <folding>
+            <element signature="e#23#44#0" expanded="true" />
           </folding>
         </state>
       </provider>

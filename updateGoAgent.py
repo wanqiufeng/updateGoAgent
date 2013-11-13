@@ -68,7 +68,7 @@ def getAppId():
 
 
 def getRemoteVersionInfo():
-    r = requests.get('https://code.google.com/p/goagent/')
+    r = requests.get('https://code.google.com/p/goagent/',verify=False)
     soup = bs4.BeautifulSoup(r.text)
 
     #get remote version no
