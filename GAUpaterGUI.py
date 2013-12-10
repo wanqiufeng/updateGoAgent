@@ -1,5 +1,6 @@
 __author__ = 'vincentc'
 import tkinter
-l = tkinter.Label(text = "See me?")
-l.pack()
-l.mainloop()
+
+root = tkinter.Tk()
+root.title("GoAgentUpdater")
+root.mainloop()
