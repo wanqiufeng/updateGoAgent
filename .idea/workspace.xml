@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8ad3488e-e17e-47e8-bc85-5435f50d4d65" name="Default" comment="add code to obtain remote version's version no and download address.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GAUpaterGUI.py" afterPath="$PROJECT_DIR$/GAUpaterGUI.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/updateGoAgent.iml" afterPath="$PROJECT_DIR$/.idea/updateGoAgent.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="updateGoAgent.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,7 +28,7 @@
       <file leaf-file-name="testTkinter.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testTkinter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="18" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0" vertical-offset="251" max-vertical-offset="836">
+            <state line="25" column="0" selection-start="605" selection-end="683" vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="817">
               <folding />
             </state>
           </provider>
@@ -40,8 +37,21 @@
       <file leaf-file-name="GAUpaterGUI.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GAUpaterGUI.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="18" selection-start="78" selection-end="78" vertical-scroll-proportion="0.12991454" vertical-offset="0" max-vertical-offset="585">
-              <folding />
+            <state line="5" column="58" selection-start="165" selection-end="165" vertical-scroll-proportion="0.24611399" vertical-offset="0" max-vertical-offset="418">
+              <folding>
+                <element signature="e#24#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="testGrid.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testGrid.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="0" selection-start="1119" selection-end="1183" vertical-scroll-proportion="0.0" vertical-offset="488" max-vertical-offset="931">
+              <folding>
+                <element signature="e#24#45#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -76,14 +86,16 @@
         <option value="$PROJECT_DIR$/local/proxy.py" />
         <option value="$PROJECT_DIR$/updateGoAgent.py" />
         <option value="$PROJECT_DIR$/testTkinter.py" />
-        <option value="$PROJECT_DIR$/GAUpaterGUI.py" />
         <option value="$PROJECT_DIR$/testTinkter" />
+        <option value="$PROJECT_DIR$/testWindows.py" />
+        <option value="$PROJECT_DIR$/testGrid.py" />
+        <option value="$PROJECT_DIR$/GAUpaterGUI.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-176" />
-    <option name="y" value="96" />
+    <option name="x" value="-8" />
+    <option name="y" value="32" />
     <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
@@ -113,7 +125,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -134,6 +145,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -152,15 +164,15 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="86" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="397" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="398" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="397" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="87" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="81" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -172,25 +184,7 @@
       <recent name="D:\PythonWorkspace\updateGoAgent" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.testTinkter">
-    <configuration default="false" name="testOs" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="updateGoAgent" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testOs.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.GAUpaterGUI">
     <configuration default="false" name="proxy" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -258,6 +252,24 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="updateGoAgent" />
       <option name="SCRIPT_NAME" value="D:\PythonWorkspace\updateGoAgent\testTinkterEvent" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="testGrid" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="updateGoAgent" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testGrid.py" />
       <option name="PARAMETERS" value="" />
       <RunnerSettings RunnerId="PythonRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
@@ -406,19 +418,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.updateGoAgent" />
-      <item index="1" class="java.lang.String" itemvalue="Python.testOs" />
-      <item index="2" class="java.lang.String" itemvalue="Python.proxy" />
-      <item index="3" class="java.lang.String" itemvalue="Python.GAUpaterGUI" />
-      <item index="4" class="java.lang.String" itemvalue="Python.testTkinter" />
-      <item index="5" class="java.lang.String" itemvalue="Python.testTinkter" />
+      <item index="1" class="java.lang.String" itemvalue="Python.proxy" />
+      <item index="2" class="java.lang.String" itemvalue="Python.GAUpaterGUI" />
+      <item index="3" class="java.lang.String" itemvalue="Python.testTkinter" />
+      <item index="4" class="java.lang.String" itemvalue="Python.testTinkter" />
+      <item index="5" class="java.lang.String" itemvalue="Python.testGrid" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.testTinkter" />
-        <item index="1" class="java.lang.String" itemvalue="Python.GAUpaterGUI" />
-        <item index="2" class="java.lang.String" itemvalue="Python.testTkinter" />
-        <item index="3" class="java.lang.String" itemvalue="Python.proxy" />
-        <item index="4" class="java.lang.String" itemvalue="Python.testOs" />
+        <item index="0" class="java.lang.String" itemvalue="Python.GAUpaterGUI" />
+        <item index="1" class="java.lang.String" itemvalue="Python.testGrid" />
+        <item index="2" class="java.lang.String" itemvalue="Python.testTinkter" />
+        <item index="3" class="java.lang.String" itemvalue="Python.testTkinter" />
+        <item index="4" class="java.lang.String" itemvalue="Python.proxy" />
       </list>
     </recent_temporary>
   </component>
@@ -462,14 +474,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-176" y="96" width="1382" height="744" extended-state="0" />
+    <frame x="-8" y="32" width="1382" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.6748366" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.6748366" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39869282" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.659164" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -505,16 +517,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/testZipFile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="52" selection-start="447" selection-end="495" vertical-scroll-proportion="0.0" vertical-offset="71" max-vertical-offset="570" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testZipfile1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="21" selection-start="84" selection-end="84" vertical-scroll-proportion="0.0" vertical-offset="76" max-vertical-offset="285" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testTempfile.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="0" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0" vertical-offset="133" max-vertical-offset="247" />
@@ -574,23 +576,41 @@
         <state line="53" column="12" selection-start="1857" selection-end="1857" vertical-scroll-proportion="0.0" vertical-offset="798" max-vertical-offset="50882" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GAUpaterGUI.py">
+    <entry file="file://$PROJECT_DIR$/testTinkterEvent">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="18" selection-start="78" selection-end="78" vertical-scroll-proportion="0.12991454" vertical-offset="0" max-vertical-offset="585">
+        <state line="6" column="11" selection-start="185" selection-end="185" vertical-scroll-proportion="0.29533678" vertical-offset="0" max-vertical-offset="386" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testWindows.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="24" selection-end="24" vertical-scroll-proportion="0.049222797" vertical-offset="0" max-vertical-offset="386">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testTkinter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="18" selection-start="471" selection-end="471" vertical-scroll-proportion="0.0" vertical-offset="251" max-vertical-offset="836">
+        <state line="25" column="0" selection-start="605" selection-end="683" vertical-scroll-proportion="0.0" vertical-offset="171" max-vertical-offset="817">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testTinkterEvent">
+    <entry file="file://$PROJECT_DIR$/testGrid.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="11" selection-start="185" selection-end="185" vertical-scroll-proportion="0.29533678" vertical-offset="0" max-vertical-offset="386" />
+        <state line="35" column="0" selection-start="1119" selection-end="1183" vertical-scroll-proportion="0.0" vertical-offset="488" max-vertical-offset="931">
+          <folding>
+            <element signature="e#24#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GAUpaterGUI.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="58" selection-start="165" selection-end="165" vertical-scroll-proportion="0.24611399" vertical-offset="0" max-vertical-offset="418">
+          <folding>
+            <element signature="e#24#38#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>
