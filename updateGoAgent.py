@@ -52,16 +52,18 @@ def hasNewVersion(localVersion, remoteVersion):
     return True
 
 
-def getLocalVersion():
-    with open('local/proxy.py', 'rt') as f:
+def getLocalVersion(path):
+    #with open('local/proxy.py', 'rt') as f:
+    with open(os.path.join(os.path.dirname(path),"proxy.py"), 'rt') as f:
         for line in f:
             if "__version__" in line:
                 return (eval(line[line.index("=") + 1:]))
 
 
-def getAppId():
+def getAppId(path):
     configparser.ConfigParser.OPTCRE = re.compile(r'(?P<option>[^=\s][^=]*)\s*(?P<vi>[=])\s*(?P<value>.*)$')
     config = configparser.ConfigParser()
+    config.read(os.path.join(os.path.dirname(path),"proxy.ini"))
     config.read('local/proxy.ini')
     appID = config["gae"]["appid"]
     return appID
@@ -100,6 +102,7 @@ def replaceOldVersion(newZipFileName):
 
             relatedPath = name[folderIndex:len(name)]
             createFolder(os.path.dirname(relatedPath), False)
+            print("ralatedPaht :",relatedPath)
             with open(relatedPath, "wb") as tempfile:
                 shutil.copyfileobj(goagentZip.open(name), tempfile)
 
@@ -109,20 +112,22 @@ def createFolder(folderName, override=False):
         shutil.rmtree(folderName)
     os.makedirs(folderName, exist_ok=True)
 
-def main():
+def main(path):
     remoteInfo = getRemoteVersionInfo()
-    localAppId = getAppId()
+    localAppId = getAppId(path)
     if hasNewVersion(getLocalVersion(), remoteInfo["remoteVersionNo"]):
         downloadedFile = downloadNewVersion(remoteInfo["downloadAddr"])
         replaceOldVersion(downloadedFile)
         setAppID(localAppId)
         downloadedFile.close()
-        deploy()
+        #deploy()
 
 
 def test():
-    print("already downLoad ", math.floor((6565654 / 4724570) * 100))
+    #print("already downLoad ", math.floor((6565654 / 4724570) * 100))
+    #getAppId("C:/Users/vincent/Documents/GitHub/updateGoAgent/local/goagent.exe")
+    print(getLocalVersion("C:/Users/vincent/Documents/GitHub/updateGoAgent/local/goagent.exe"))
 
 if __name__ == '__main__':
-    main()
-    #test()
+    #main("C:/Users/vincent/Documents/GitHub/updateGoAgent/local/goagent.exe")
+    test()
