@@ -7,7 +7,8 @@ root = tkinter.Tk()
 root.title("GoAgentUpdater")
 
 def update():
-    print("fdd")
+    print("goagentPaht:{0}".format(goagentPath.get()))
+    updateGoAgent.main(goagentPath.get())
 
 def openFileSelector():
     fileSelected = tkinter.filedialog.askopenfilename(filetypes = [('Executable file','.exe')])

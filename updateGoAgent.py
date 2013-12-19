@@ -12,16 +12,19 @@ import math
 
 
 def downloadNewVersion(downloadAddr):
+    print("starting download ...")
     r = requests.get(downloadAddr, stream=True, verify=False)
     totalFileLength = int((r.headers.get("Content-Length").strip()))
     downLoadSize = 0
     previousPercent = 0
     tempFile = tempfile.TemporaryFile()
+    print("starting writing file...")
     for chunk in r.iter_content(1024):
         downLoadSize += len(chunk)
-        tempFile.write(chunk)
+        #print(downLoadSize)
         printProccess(math.floor((downLoadSize / totalFileLength) * 100),previousPercent)
         previousPercent = math.floor((downLoadSize / totalFileLength) * 100)
+        tempFile.write(chunk)
     return tempFile
     #TO_DO: 1. change fixed download file to temp file
     #TO_DO: 2.add download percent show
@@ -32,13 +35,14 @@ def printProccess(currentNum,PreviouseNum):
 
 
 
-def setAppID(appId):
+def setAppID(appId,path):
     configparser.ConfigParser.OPTCRE = re.compile(r'(?P<option>[^=\s][^=]*)\s*(?P<vi>[=])\s*(?P<value>.*)$')
     config = configparser.ConfigParser()
-    config.read('local/proxy.ini')
+    path_abs_proxyINI = os.path.join(os.path.dirname(path),"proxy.ini")
+    config.read(path_abs_proxyINI)
     config.remove_option("gae", "appid")
     config.set("gae", "appid", appId)
-    with open('local/proxy.ini', 'w') as configfile:
+    with open(path_abs_proxyINI, 'w') as configfile:
         config.write(configfile)
 
 
@@ -64,7 +68,6 @@ def getAppId(path):
     configparser.ConfigParser.OPTCRE = re.compile(r'(?P<option>[^=\s][^=]*)\s*(?P<vi>[=])\s*(?P<value>.*)$')
     config = configparser.ConfigParser()
     config.read(os.path.join(os.path.dirname(path),"proxy.ini"))
-    config.read('local/proxy.ini')
     appID = config["gae"]["appid"]
     return appID
 
@@ -86,24 +89,27 @@ def getRemoteVersionInfo():
     }
 
 
-def replaceOldVersion(newZipFileName):
+def replaceOldVersion(newZipFileName,path):
+    path_abs_root = os.path.dirname(os.path.dirname(path))
+    path_obs_server = os.path.join(path_abs_root,"server")
+    path_obs_local = os.path.join(path_abs_root,"local")
     goagentZip = zipfile.ZipFile(newZipFileName, 'r')
-    goagentSubFolder_Server = "server/"
-    goagentSubFolder_Local = "local/"
-    createFolder(goagentSubFolder_Server, True)
-    createFolder(goagentSubFolder_Local, True)
+    path_relative_server = "server/"
+    path_relative_local = "local/"
+    createFolder(path_obs_server, True)
+    createFolder(path_obs_local, True)
     for name in goagentZip.namelist():
-        if (goagentSubFolder_Server in name or goagentSubFolder_Local in name ) and not name.endswith("/"):
+        if (path_relative_server in name or path_relative_local in name ) and not name.endswith("/"):
             folderIndex = None
-            if goagentSubFolder_Local in name:
-                folderIndex = name.find(goagentSubFolder_Local)
-            elif goagentSubFolder_Server in name:
-                folderIndex = name.find(goagentSubFolder_Server)
+            if path_relative_local in name:
+                folderIndex = name.find(path_relative_local)
+            elif path_relative_server in name:
+                folderIndex = name.find(path_relative_server)
 
             relatedPath = name[folderIndex:len(name)]
-            createFolder(os.path.dirname(relatedPath), False)
-            print("ralatedPaht :",relatedPath)
-            with open(relatedPath, "wb") as tempfile:
+            absolutePath = os.path.join(path_abs_root,relatedPath)
+            createFolder(os.path.dirname(absolutePath), False)
+            with open(absolutePath, "wb") as tempfile:
                 shutil.copyfileobj(goagentZip.open(name), tempfile)
 
 
@@ -113,12 +119,19 @@ def createFolder(folderName, override=False):
     os.makedirs(folderName, exist_ok=True)
 
 def main(path):
+    print("get Remote Version Info ...")
     remoteInfo = getRemoteVersionInfo()
+    print("get Local App ID ...")
     localAppId = getAppId(path)
-    if hasNewVersion(getLocalVersion(), remoteInfo["remoteVersionNo"]):
+    print("judge whether need update ...")
+    if hasNewVersion(getLocalVersion(path), remoteInfo["remoteVersionNo"]):
+        print("download new version ...")
         downloadedFile = downloadNewVersion(remoteInfo["downloadAddr"])
-        replaceOldVersion(downloadedFile)
-        setAppID(localAppId)
+        print("replace old version ...")
+        replaceOldVersion(downloadedFile,path)
+        print("set appid id ...")
+        setAppID(localAppId,path)
+        print("delete  download file ... ")
         downloadedFile.close()
         #deploy()
 
@@ -126,8 +139,8 @@ def main(path):
 def test():
     #print("already downLoad ", math.floor((6565654 / 4724570) * 100))
     #getAppId("C:/Users/vincent/Documents/GitHub/updateGoAgent/local/goagent.exe")
-    print(getLocalVersion("C:/Users/vincent/Documents/GitHub/updateGoAgent/local/goagent.exe"))
+    print(getAppId("C:/Users/vincent/Documents/GitHub/updateGoAgent/local/goagent.exe"))
 
 if __name__ == '__main__':
-    #main("C:/Users/vincent/Documents/GitHub/updateGoAgent/local/goagent.exe")
-    test()
+    main("C:/Users/vincent/Documents/GitHub/updateGoAgent/local/goagent.exe")
+    #test()
