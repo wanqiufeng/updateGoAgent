@@ -35,7 +35,7 @@
 #      cuixin            <steven.cuixin@gmail.com>
 #      s2marine0         <s2marine0@gmail.com>
 
-__version__ = '3.1.1'
+__version__ = '3.1.0'
 
 import sys
 import os

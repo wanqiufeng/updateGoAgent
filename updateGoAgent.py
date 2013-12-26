@@ -31,7 +31,7 @@ def downloadNewVersion(downloadAddr):
 
 def printProccess(currentNum,PreviouseNum):
     if currentNum > PreviouseNum:
-        print("#",end='')
+        print("#",end=' ')
 
 
 

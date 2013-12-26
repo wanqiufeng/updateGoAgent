@@ -3,44 +3,59 @@ import tkinter
 import tkinter.ttk
 import tkinter.filedialog
 import updateGoAgent
+import threading
+
 root = tkinter.Tk()
 root.title("GoAgentUpdater")
 
 def update():
-    print("goagentPaht:{0}".format(goagentPath.get()))
-    updateGoAgent.main(goagentPath.get())
+    btnUpdate.state(['disabled'])
+    print("goagentPaht:{0}".format(vGoagentPath.get()))
+    threading.Thread(target = updateGoAgent.main,args=(vGoagentPath.get(),)).start()
 
 def openFileSelector():
     fileSelected = tkinter.filedialog.askopenfilename(filetypes = [('Executable file','.exe')])
-    goagentPath.set(fileSelected)
+    vGoagentPath.set(fileSelected)
 
-content = tkinter.ttk.Frame(root, padding=(3,3,12,12),width=800,height=600)
-modeLabel = tkinter.ttk.Label(content, text="Update Mode")
-modeLine = tkinter.ttk.Separator(content, orient=tkinter.HORIZONTAL)
-updateMode = tkinter.StringVar()
-manualMode = tkinter.ttk.Radiobutton(content, text='Manual Mode', variable=updateMode, value='manual',command=openFileSelector)
-goagentPath = tkinter.StringVar()
-goagentPathEntry = tkinter.ttk.Entry(content, textvariable=goagentPath)
-autoMode = tkinter.ttk.Radiobutton(content, text='Auto Mode', variable=updateMode, value='auto')
+content = tkinter.ttk.Frame(root)
+btnSelectFile = tkinter.ttk.Button(content, text='Select Path', command=openFileSelector)
+vGoagentPath = tkinter.StringVar()
+etyGoagentPath = tkinter.ttk.Entry(content, textvariable=vGoagentPath,width=60)
+labelAppId = tkinter.ttk.Label(content, text="AppIDs")
+vAppId = tkinter.StringVar()
+etyAppId = tkinter.ttk.Entry(content, textvariable=vAppId)
 
-buttonLabel = tkinter.ttk.Label(content, text="Handle Buttons")
-buttonLine = tkinter.ttk.Separator(content, orient=tkinter.HORIZONTAL)
+
+separatorLine = tkinter.ttk.Separator(content, orient=tkinter.HORIZONTAL)
 btnUpdate = tkinter.ttk.Button(content, text='Update', command=update)
-btnEnforceUpdate = tkinter.ttk.Button(content, text='Enforce Update', command=update)
+
+vInfo = tkinter.StringVar()
+labelInfo = tkinter.ttk.Label(content, textvariable=vInfo)
+vInfo.set("wait update now!")
+p = tkinter.ttk.Progressbar(content, orient=tkinter.HORIZONTAL, mode='determinate')
+p.step(0)
 
 content.grid(column=0, row=0, sticky=(tkinter.N, tkinter.S, tkinter.E, tkinter.W))
-modeLabel.grid(column=1, row=2, columnspan=2, padx=5)
-modeLine.grid(column=1 ,row=3,columnspan=10,sticky=(tkinter.N, tkinter.S, tkinter.E, tkinter.W))
-manualMode.grid(column=2,row=4)
-goagentPathEntry.grid(column=3,row=4)
-#fileSelector.grid(column=3,row=4)
-autoMode.grid(column=2,row=5)
-buttonLabel.grid(column=1,row=9, columnspan=2, padx=5)
-buttonLine.grid(column=2,row=10,columnspan=10,sticky=(tkinter.N, tkinter.S, tkinter.E, tkinter.W))
-btnUpdate.grid(column=2,row=12)
-btnEnforceUpdate.grid(column=3,row=12)
+btnSelectFile.grid(column=0,row=0,sticky=(tkinter.N, tkinter.W),pady=20,padx=10)
+etyGoagentPath.grid(column=1,row=0,columnspan=2,sticky=(tkinter.N, tkinter.W),pady=20,padx=0)
+labelAppId.grid(column=0,row=1,sticky=(tkinter.N, tkinter.W),pady=0,padx=10)
+etyAppId.grid(column=1,row=1,columnspan=2,sticky=(tkinter.N, tkinter.W),pady=0,padx=0)
+separatorLine.grid(column=0,row=2,columnspan=3,sticky=( tkinter.E, tkinter.W),pady=30,padx=15)
+btnUpdate.grid(column=0,row=3,columnspan=2,sticky=(tkinter.S, tkinter.E),pady=0,padx=0)
+labelInfo.grid(column=0,row=4,columnspan=3,sticky=( tkinter.E, tkinter.W))
+p.grid(column=0,row=5,columnspan=3,sticky=( tkinter.E, tkinter.W))
 
 root.columnconfigure(0, weight=1)
 root.rowconfigure(0, weight=1)
+
+content.columnconfigure(0, weight=1)
+content.columnconfigure(1, weight=1)
+content.columnconfigure(2, weight=1)
+content.rowconfigure(0, weight=1)
+content.rowconfigure(1, weight=1)
+content.rowconfigure(2, weight=1)
+content.rowconfigure(3, weight=1)
+content.rowconfigure(4, weight=1)
+content.rowconfigure(5, weight=1)
 
 root.mainloop()
