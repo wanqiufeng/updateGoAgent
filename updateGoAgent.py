@@ -11,7 +11,7 @@ import configparser
 import math
 
 
-def downloadNewVersion(downloadAddr):
+def downloadNewVersion(downloadAddr,proccessBar):
     print("starting download ...")
     r = requests.get(downloadAddr, stream=True, verify=False)
     totalFileLength = int((r.headers.get("Content-Length").strip()))
@@ -21,17 +21,12 @@ def downloadNewVersion(downloadAddr):
     print("starting writing file...")
     for chunk in r.iter_content(1024):
         downLoadSize += len(chunk)
-        #print(downLoadSize)
-        printProccess(math.floor((downLoadSize / totalFileLength) * 100),previousPercent)
-        previousPercent = math.floor((downLoadSize / totalFileLength) * 100)
+        proccessBar.step(math.floor((downLoadSize / totalFileLength) * 100))
         tempFile.write(chunk)
     return tempFile
     #TO_DO: 1. change fixed download file to temp file
     #TO_DO: 2.add download percent show
 
-def printProccess(currentNum,PreviouseNum):
-    if currentNum > PreviouseNum:
-        print("#",end=' ')
 
 
 
@@ -118,20 +113,20 @@ def createFolder(folderName, override=False):
         shutil.rmtree(folderName)
     os.makedirs(folderName, exist_ok=True)
 
-def main(path):
-    print("get Remote Version Info ...")
+def main(path,tipsLabel,proccessBar):
+    tipsLabel.set("get Remote Version Info ...")
     remoteInfo = getRemoteVersionInfo()
-    print("get Local App ID ...")
+    tipsLabel.set("get Local App ID ...")
     localAppId = getAppId(path)
-    print("judge whether need update ...")
+    tipsLabel.set("judge whether need update ...")
     if hasNewVersion(getLocalVersion(path), remoteInfo["remoteVersionNo"]):
-        print("download new version ...")
-        downloadedFile = downloadNewVersion(remoteInfo["downloadAddr"])
-        print("replace old version ...")
+        tipsLabel.set("download new version ...")
+        downloadedFile = downloadNewVersion(remoteInfo["downloadAddr"],proccessBar)
+        tipsLabel.set("replace old version ...")
         replaceOldVersion(downloadedFile,path)
-        print("set appid id ...")
+        tipsLabel.set("set appid id ...")
         setAppID(localAppId,path)
-        print("delete  download file ... ")
+        tipsLabel.set("delete  download file ... ")
         downloadedFile.close()
         #deploy()
 
