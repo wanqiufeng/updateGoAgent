@@ -20,8 +20,9 @@ def downloadNewVersion(downloadAddr,proccessBar):
     tempFile = tempfile.TemporaryFile()
     print("starting writing file...")
     for chunk in r.iter_content(1024):
-        downLoadSize += len(chunk)
-        proccessBar.step(math.floor((downLoadSize / totalFileLength) * 100))
+        #downLoadSize += len(chunk)
+        proccessBar.step(len(chunk)/ totalFileLength*100)
+        #proccessBar.step(math.floor((downLoadSize / totalFileLength) * 100))
         tempFile.write(chunk)
     return tempFile
     #TO_DO: 1. change fixed download file to temp file
@@ -113,11 +114,10 @@ def createFolder(folderName, override=False):
         shutil.rmtree(folderName)
     os.makedirs(folderName, exist_ok=True)
 
-def main(path,tipsLabel,proccessBar):
+def main(path,tipsLabel,proccessBar,vAppId,btnUpdate,etyAppId):
     tipsLabel.set("get Remote Version Info ...")
     remoteInfo = getRemoteVersionInfo()
     tipsLabel.set("get Local App ID ...")
-    localAppId = getAppId(path)
     tipsLabel.set("judge whether need update ...")
     if hasNewVersion(getLocalVersion(path), remoteInfo["remoteVersionNo"]):
         tipsLabel.set("download new version ...")
@@ -125,11 +125,13 @@ def main(path,tipsLabel,proccessBar):
         tipsLabel.set("replace old version ...")
         replaceOldVersion(downloadedFile,path)
         tipsLabel.set("set appid id ...")
-        setAppID(localAppId,path)
+        setAppID(vAppId.get(),path)
         tipsLabel.set("delete  download file ... ")
         downloadedFile.close()
-        #deploy()
-
+        tipsLabel.set("update completed.")
+        proccessBar.grid_remove()
+        btnUpdate.state(['!disabled'])
+        etyAppId.state(['!disabled'])
 
 def test():
     #print("already downLoad ", math.floor((6565654 / 4724570) * 100))

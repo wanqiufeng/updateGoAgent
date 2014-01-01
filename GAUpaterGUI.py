@@ -30,23 +30,26 @@ menu_help.add_command(label='About', command=aboutInfo)
 
 def update():
     btnUpdate.state(['disabled'])
+    etyAppId.state(['disabled'])
     print("goagentPaht:{0}".format(vGoagentPath.get()))
     proccessBar.grid(column=0, row=5, columnspan=3, sticky=( tkinter.E, tkinter.W))
-    threading.Thread(target=updateGoAgent.main, args=(vGoagentPath.get(),vInfo,proccessBar)).start()
+    threading.Thread(target=updateGoAgent.main, args=(vGoagentPath.get(),vInfo,proccessBar,vAppId,btnUpdate,etyAppId)).start()
 
 
 def openFileSelector():
     fileSelected = tkinter.filedialog.askopenfilename(filetypes=[('Executable file', '.exe')])
     vGoagentPath.set(fileSelected)
+    vAppId.set(updateGoAgent.getAppId(fileSelected))
 
 
 content = tkinter.ttk.Frame(root)
 btnSelectFile = tkinter.ttk.Button(content, text='Select Path', command=openFileSelector)
 vGoagentPath = tkinter.StringVar()
 etyGoagentPath = tkinter.ttk.Entry(content, textvariable=vGoagentPath, width=60)
+etyGoagentPath.state(['disabled'])
 labelAppId = tkinter.ttk.Label(content, text="AppIDs")
 vAppId = tkinter.StringVar()
-etyAppId = tkinter.ttk.Entry(content, textvariable=vAppId)
+etyAppId = tkinter.ttk.Entry(content, textvariable=vAppId, width=60)
 
 separatorLine = tkinter.ttk.Separator(content, orient=tkinter.HORIZONTAL)
 btnUpdate = tkinter.ttk.Button(content, text='Update', command=update)
@@ -54,7 +57,7 @@ btnUpdate = tkinter.ttk.Button(content, text='Update', command=update)
 vInfo = tkinter.StringVar()
 labelInfo = tkinter.ttk.Label(content, textvariable=vInfo)
 #vInfo.set("wait update now!")
-proccessBar = tkinter.ttk.Progressbar(content, orient=tkinter.HORIZONTAL, mode='determinate')
+proccessBar = tkinter.ttk.Progressbar(content, orient=tkinter.HORIZONTAL, mode='determinate',length=100)
 
 
 content.grid(column=0, row=0, sticky=(tkinter.N, tkinter.S, tkinter.E, tkinter.W))
